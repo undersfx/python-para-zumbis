@@ -1,5 +1,4 @@
 # Python para Zumbis
-==================
 
 Exercícios realizados no curso "Python para Zumbis" by @fmasanori
 
