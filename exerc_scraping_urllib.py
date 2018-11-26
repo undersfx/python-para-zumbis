@@ -4,19 +4,19 @@ import urllib.request
 url = 'http://www.afterfest.com.br/guten-bier-lancamento-temporada-cafe-de-la-musique/'
 
 
-# Importa o html
+# Lê e decodifica o código html da pagina
 html = urllib.request.urlopen(url).read().decode('utf-8')
 
 # Padrão de imagens a ser procurado
 padrao = 'href="http://www.afterfest.com.br/wp-content/uploads/2017/05/'
 
+i = 0
+k = 1
+
 # # Escreve HTML em arquivo 
 # arquivo = open('html.txt', 'w')
 # arquivo.write(html)
 # arquivo.close()
-
-i = 0
-k = 1
 
 # Loop através de todos links atualizando com o nome da imagem e escrevendo os arquivos
 while i != -1:
